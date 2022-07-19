@@ -16,7 +16,7 @@
         }
     },
     "content_scripts": [{
-        "matches": ["https://chat.google.com/*"],
+        "matches": ["https://chat.google.com/*", "https://mail.google.com/*"],
         "all_frames": true,
         "js": ["bradify.js"]
     }]
