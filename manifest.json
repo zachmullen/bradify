@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Bradify",
+    "description": "Bradify your GChat",
+    "version": "0.1",
+    "icons": {
+        "16": "/images/icon16.png",
+        "48": "/images/icon48.png",
+        "128": "/images/icon128.png"
+    },
+    "action": {
+        "default_icon": {
+            "16": "/images/icon16.png",
+            "48": "/images/icon48.png",
+            "128": "/images/icon128.png"
+        }
+    },
+    "content_scripts": [{
+        "matches": ["https://chat.google.com/*"],
+        "all_frames": true,
+        "js": ["bradify.js"]
+    }]
+}
